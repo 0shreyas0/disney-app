@@ -2,6 +2,11 @@
 
 Welcome to the **Disney Interactive Experience**, a modern, highly engaging web application built with React, Vite, and cutting-edge web animation libraries. This project serves as a dynamic tribute to the magical world of Disney, featuring interactive 3D elements, smooth scrolling, and hidden secrets!
 
+live:
+
+https://ternary-operators-bay.vercel.app/
+
+
 ## 🚀 Core Features
 
 ### 1. 📖 Immersive 3D Preloader
