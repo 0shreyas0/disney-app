@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/disney-castle-logo.svg" alt="Walt Disney Redesigned" width="120" />
+  <img src="./public/disney-castle-logo.svg" alt="Walt Disney Redesigned" width="120" />
 
   # 🏰 Disney Interactive Experience 
 
