@@ -16,10 +16,10 @@ export const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-[99999] pointer-events-none"
     >
       {/* Glassmorphic bar — logo left | links center | mickey right */}
-      <div className="mx-auto max-w-fit mt-6 rounded-full bg-black/40 backdrop-blur-2xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)] px-8 py-2 flex items-center gap-12 pointer-events-auto">
+      <div className="mx-auto w-[calc(100%-2rem)] md:w-auto md:max-w-fit mt-6 rounded-full bg-black/40 backdrop-blur-2xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)] px-5 md:px-8 py-2 flex items-center justify-between gap-4 md:gap-12 pointer-events-auto">
 
         {/* Left — Castle logo */}
-        <div className="flex items-center">
+        <div className="flex items-center shrink-0">
           <NavLogo />
         </div>
 
@@ -29,14 +29,14 @@ export const Navbar = () => {
         </div>
 
         {/* Right — Mickey + hamburger */}
-        <div className="flex items-center justify-end gap-3">
+        <div className="flex items-center justify-end gap-4 shrink-0">
           <motion.a
             href="#streaming"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            className="hidden md:block"
+            className="block"
           >
-            <img src={mickeyMouse} alt="Disney+" className="h-12 w-12" />
+            <img src={mickeyMouse} alt="Disney+" className="h-10 w-10 md:h-12 md:w-12" />
           </motion.a>
 
           {/* Mobile hamburger */}

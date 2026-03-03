@@ -1,87 +1,110 @@
-# Disney Interactive Experience 🏰✨
+<div align="center">
+  <img src="public/disney-castle-logo.svg" alt="Walt Disney Redesigned" width="120" />
 
-Welcome to the **Disney Interactive Experience**, a modern, highly engaging web application built with React, Vite, and cutting-edge web animation libraries. This project serves as a dynamic tribute to the magical world of Disney, featuring interactive 3D elements, smooth scrolling, and hidden secrets!
+  # 🏰 Disney Interactive Experience 
 
-live:
+  *A modern, highly engaging web application honoring the magical world of Disney.*
 
-https://ternary-operators-bay.vercel.app/
+  [**✨ View Live Demo ✨**](https://walt-disney-redesigned.vercel.app/)
 
+  ---
 
-## 🚀 Core Features
+  ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+  ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+  ![Three.js](https://img.shields.io/badge/Three.js-black?style=for-the-badge&logo=three.js&logoColor=white)
+  ![Framer Motion](https://img.shields.io/badge/Framer_Motion-white?style=for-the-badge&logo=framer&logoColor=black)
+  ![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)
+  ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+  ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
-### 1. 📖 Immersive 3D Preloader
-The experience begins with a stunning 3D preloader featuring a Snow White book animation. Built using `@react-three/fiber` and `@react-three/drei`, it sets the magical tone before the main content is revealed.
+</div>
 
-### 2. ✨ Smooth Scrolling & Parallax Effects
-We utilize **Lenis** for buttery smooth scrolling across the entire page. Combined with **GSAP** and **Framer Motion**, elements like the Hero Section feature parallax starfields and stunning scroll-linked animations. Numbers across the site (like film release years and statistics) animate dynamically using the `CountUp` component as they scroll into view.
+<br/>
 
-### 3. 🎮 "Hidden Princess" Mini-Game
-Scattered throughout the site are hidden princesses! Users can explore the page to find them, and their progress is tracked in a persistent, globally accessible **Collection HUD**. This gamifies the browsing experience and encourages deeper exploration of the different sections. 
+## 🌟 About The Project
 
-### 4. 🎦 Dynamic Sections & Media
+Welcome to the **Disney Interactive Experience**! This project is a dynamic tribute to the magical worlds of Disney, Marvel, Star Wars, and Pixar. Featuring interactive 3D elements, smooth scrolling, Easter eggs, and a hidden princess mini-game, this application pushes the boundaries of modern web animations that feel incredibly immersive.
+
+> **Note**: For the best interactive experience, please check out the live demo [here](https://walt-disney-redesigned.vercel.app/). 
+
+## ✨ Core Features
+
+### 📖 Immersive 3D Preloader
+The experience begins with a stunning **3D preloader** featuring an interactive and magical book animation. Built using `@react-three/fiber` and `@react-three/drei`, it creates an unforgettable introduction before the main content is revealed.
+
+### 🎢 Smooth Scrolling & Parallax Effects
+We utilize **Lenis** for buttery smooth, momentum-based scrolling. Combined with **GSAP** and **Framer Motion**, elements like the Hero Section feature parallax starfields and scroll-linked animations that bring the page to life.
+
+### 🎮 "Hidden Princess" Mini-Game
+Scattered throughout the site are hidden princesses! 
+* Explore the page to find them.
+* Your progress is tracked in a persistent **Collection HUD**.
+* Fully gamifies the browsing experience!
+
+### 🕹️ Custom Interactions
+- **Ralph Chaser Cursor**: A playful interactive layer where Wreck-It Ralph follows your mouse!
+- **SplitText Navigation**: Mesmerizing character-by-character animation effects on headers and menus.
+- **Dynamic Counters**: Numbers animate dynamically using a custom `CountUp` logic as they scroll into view.
+
+## 🎦 Exploring the Worlds
+
 - **Hero Section:** A captivating full-screen introduction featuring custom Disney branding and autoplaying video backgrounds.
 - **Hero Carousel:** A beautifully animated carousel showcasing Disney's rich history.
-- **Franchise Worlds:** Interactive cards dedicated to Disney universes (Marvel, Star Wars, Pixar, etc.).
+- **Franchise Worlds:** Interactive animated cards dedicated to the cinematic universes (Marvel, Star Wars, Pixar).
 - **Film Reel:** A scrolling cinematic reel of classic Disney films.
-- **Disney+ & Merch:** Dedicated sections for streaming content and merchandise.
+- **Disney+ & Merch:** Dedicated immersive sections for streaming content and merchandise.
 - **Theme Parks:** A vibrant section celebrating Disney Parks around the world.
 
-### 5. 🖱️ Custom Interactions (Ralph Cursor & SplitText)
-- A **Ralph Chaser Cursor** follows the user's mouse, adding a playful interactive layer.
-- **SplitText Navigation:** Navigation headers and links feature a mesmerizing character-by-character animation effect, creating a premium feel.
-
 ## 🛠️ Technology Stack
-- **Framework:** React 19 + TypeScript + Vite
-- **Styling:** Tailwind CSS + Vanilla CSS (Glassmorphism & custom variables)
-- **3D Graphics:** Three.js, React Three Fiber (`@react-three/fiber`), React Three Drei (`@react-three/drei`)
-- **Animations:** GSAP, Framer Motion
-- **Physics:** Matter.js
-- **Smooth Scrolling:** Lenis
 
-## 🔄 Development Workflow
+This application is built with performance and visual excellence in mind:
 
-The development of this project followed a structured workflow to ensure high performance and visual excellence:
+| Category | Technologies |
+| -------- | ------------ |
+| **Framework** | React 19, TypeScript, Vite |
+| **Styling** | Tailwind CSS, Custom Glassmorphism UI |
+| **3D & Canvas** | Three.js, React Three Fiber, React Three Drei |
+| **Animations** | GSAP, Framer Motion |
+| **Physics & Scrolling** | Matter.js, Lenis Scroll |
 
-1. **Foundation & Routing:** 
-   * Setup using Vite for lightning-fast HMR.
-   * Established the global layout in `App.tsx` and configured providers (`GameProvider`, `ActiveSectionProvider`) for global state management.
-   
-2. **Design System & Styling:** 
-   * Configured Tailwind CSS and basic global CSS for consistent typography, dark mode base (`#020818`), and glassmorphism utilities.
-   
-3. **Core Component Assembly:** 
-   * Built modular sections (`HeroSection`, `HeroCarousel`, `FranchiseWorlds`, `FilmReel`, etc.) independently. 
-   * Ensured responsive design for each segment before integrating them into the main app.
-   
-4. **Animation & Interactivity Injection:** 
-   * Replaced static textual logos with authentic SVGs and introduced video backgrounds.
-   * Applied `Framer Motion` for page loading fades and scroll reveals.
-   * Implemented `GSAP` and custom components like `SplitText` and `CountUp` to bring text and numbers to life.
-   * Added `Lenis` for smooth, momentum-based scrolling.
+## 🚀 Getting Started Locally
 
-5. **3D & Minigame Integration:** 
-   * Created the 3D Preloader (`Disney3DPreloader`) and lazily loaded it to optimize initial JS bundle size.
-   * Integrated the `HiddenPrincess` objects and linked them to the `CollectionHUD` via React Context context hooks.
+To get this project up and running on your local machine, follow these simple steps:
 
-6. **Refinement & Polish:** 
-   * Adjusted animation timings, fixed TypeScript declarations, and handled cross-browser quirks (like autoplaying muted videos and handling WebGL contexts safely).
+### Prerequisites
+* Ensure you have [Node.js](https://nodejs.org/) installed on your machine.
+* `npm`, `yarn`, or `pnpm` for managing dependencies.
 
-## 💻 Running Locally
+### Installation
 
-To get this project up and running on your local machine:
-
-1. **Clone the repository** (if you haven't already).
-2. **Install dependencies:**
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   ```
+2. **Navigate to the directory**
+   ```bash
+   cd disney-app
+   ```
+3. **Install dependencies**
    ```bash
    npm install
    ```
-3. **Start the development server:**
+4. **Start the development server**
    ```bash
    npm run dev
    ```
-4. **Build for production:**
-   ```bash
-   npm run build
-   ```
+5. **Open in Browser**
+   Visit `http://localhost:5173` to experience the magic!
 
-Enjoy the magic! ✨
+## 📜 Scripts
+
+* `npm run dev`: Starts the Vite development server.
+* `npm run build`: Compiles TypeScript and builds the app for production.
+* `npm run lint`: Runs ESLint to ensure code quality.
+* `npm run preview`: Locally preview the production build.
+
+<br/>
+
+<div align="center">
+  <p>Made with ❤️ and ✨ Magic</p>
+</div>
